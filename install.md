@@ -17,6 +17,11 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install yarn
 ```
 
+**React Native**
+```bash
+sudo yarn global add create-react-native-app
+```
+ 
 ## Editores de código e IDE
 
 **vscode**
