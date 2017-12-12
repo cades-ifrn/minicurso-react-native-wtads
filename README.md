@@ -1,2 +1,2 @@
-# minicurso-ionic
-Repositório com material para Minicurso de Ionic
+# minicurso-react-native
+Repositório com material para Minicurso de React Native
