@@ -3,17 +3,39 @@ import {StyleSheet, View, Text, SectionList, TouchableOpacity, LoadingControl, R
 
 const styles = StyleSheet.create({
   headerContainer: {
-    margin: 20,
+    padding: 10,
+    paddingTop: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+    backgroundColor: '#3F51B5',
   },
   headerTitle: {
     fontWeight: 'bold',
-    fontSize: 18
+    fontSize: 18,
+    color: '#fff'
   },
   headerSubtitle: {
-    color: '#999'
+    color: '#BDBDBD'
+  },
+  itemContainer: {
+    padding: 10,
+    backgroundColor: '#f5f5f5'
+  },
+  itemTitle: {
+    fontSize: 16,
+    fontWeight: 'bold'
+  },
+  itemSubtitle: {
+    color: '#666',
+    fontSize: 10
+  },
+  itemDescription: {
+    textAlign: 'justify',
+    fontSize: 12
+  },
+  itemSpeaker: {
+    fontSize: 10
   }
 });
 
@@ -26,10 +48,21 @@ const Header = ({title, chair}) => {
   )
 }
 
-const Item = ({title}) => {
+const Item = ({title, description, time, speakers}) => {
   return (
-    <TouchableOpacity>
-      <Text>{title}</Text>
+    <TouchableOpacity style={styles.itemContainer}>
+      <Text style={styles.itemTitle}>{title}</Text>
+      <Text style={styles.itemSubtitle}>{time.start} - {time.end}</Text>
+      {
+        description.length
+        ? <Text style={styles.itemDescription}>{description}</Text>
+        : null
+      }
+      {
+        speakers.length
+        ? <Text style={styles.itemSpeaker}>{speakers.join(', ')}</Text>
+        : null
+      }
     </TouchableOpacity>
   )
 }
@@ -45,7 +78,7 @@ export default class ProgramacaoScreen extends React.Component {
       carregando: true
     })
 
-    fetch('https://rawgit.com/chicobentojr/2710b41a9a376bbcd43a634bb7935fd4/raw/4ca17d5a93f47ee35aa02ec35ea0964a8ae2f6bc/wtads2017.json')
+    fetch('https://rawgit.com/chicobentojr/2710b41a9a376bbcd43a634bb7935fd4/raw/4f7f3ef7e520f625b881786a9d7bd7436086f7a3/wtads2017.json')
       .then(response => response.json())
       .then(({schedule}) => {
         let key = 1;
@@ -81,7 +114,7 @@ export default class ProgramacaoScreen extends React.Component {
           refreshControl={
             <RefreshControl
               refreshing={this.state.carregando}
-              onRefresh={this._carregar}
+              onRefresh={() => this._carregar()}
             />
           }
           renderItem={this._renderItem}
