@@ -2,7 +2,7 @@
 
 ## Linux Debian*
 
-(Opcional) **Node.js** e **npm**
+**Node.js** e **npm** (Opcional)
 
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -22,19 +22,21 @@ sudo apt-get update && sudo apt-get install yarn
 **React-Native CLI**
 
 ```bash
-sudo yarn global add create-react-native-app
+yarn global add create-react-native-app
 ```
 
 **Configuração**
 
 ```bash
-sudo echo "fs.inotify.max_user_instances=1024" >> /etc/sysctl.conf
-sudo echo "fs.inotify.max_user_watches=12288" >> /etc/sysctl.conf
+echo "fs.inotify.max_user_instances=1024" | sudo tee -a /etc/sysctl.conf
+echo "fs.inotify.max_user_watches=12288" | sudo tee -a /etc/sysctl.conf
 ```
+
+> Você precisará reiniciar a máquina para configuração fazer efeito.
  
 ## Editores de código e IDE
 
-**vscode**
+**vscode** (recomendado)
 https://code.visualstudio.com/
 
 **atom.io**
