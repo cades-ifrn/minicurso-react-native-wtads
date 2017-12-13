@@ -9,7 +9,7 @@ export default class HomeScreen extends React.Component {
         <Image style={styles.image} source={logo} resizeMode="contain" />
         <Text style={styles.title}>7º WTADS</Text>
         <Text style={styles.subtitle}>13, 14 e 15 de dezembro</Text>
-        <Button color='#FFCC00' style={styles.button} title="Ver programação" onPress={() => console.log('Pressed')} />
+        <Button color='#FFCC00' style={styles.button} title="Ver programação" onPress={() => this.props.navigation.navigate('Programacao')} />
       </View>
     );
   }
