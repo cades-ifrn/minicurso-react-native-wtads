@@ -1,0 +1,298 @@
+{
+  "title": "VII Workshop de Tecnologias em Análise e Desenvolvimento de Sistemas - 7º WTADS",
+  "info": {
+    "days": "13 a 15 de dezembro de 2017",
+    "hours": "MANHÃ (8:00h às 12:00h) e TARDE (14:00h às 18:00h)",
+    "local": "Campus Natal Central",
+    "public": "Público em geral, em especial os alunos dos cursos de Tecnologia em Análise e Desenvolvimento de Sistemas e Técnico em Informática para Internet do IFRN.",
+    "obs": "Aqueles que desejarem participar das atividades como ouvintes, devem respeitar o horário de início dessas atividades, em virtude do limite de ocupação do AMBIENTE (100 pessoas). Cada atividade que compõe o evento terá a sua lista de presença específica, as quais serão utilizadas para a confecção dos respectivos certificados de participação."
+  },
+  "keynotes": [{
+      "title": "Prof.",
+      "name": "Agostinho Brito Júnior",
+      "institute": "DCA - UFRN"
+    },
+    {
+      "title": "Prof.",
+      "name": "João Moreno",
+      "institute": "LAICA - IFRN"
+    },
+    {
+      "title": "Prof.",
+      "name": "Ricardo Valentim",
+      "institute": "LAIS - UFRN"
+    },
+    {
+      "title": "Profa.",
+      "name": "Silvia Matos",
+      "institute": "IFRN campus Cidade Alta"
+    }
+  ],
+  "courses": [{
+      "title": "React-Native",
+      "description": "Permite que você crie aplicativos para dispositivos móveis usando apenas JavaScript. Ele usa o mesmo design que o React, permitindo que você crie uma interface com o usuário rica a partir de componentes declarativos. Com o React Native, você não cria um “aplicativo web móvel”, um “aplicativo HTML5” ou um “aplicativo híbrido”. Você constrói um aplicativo móvel real que é indistinguível de um aplicativo criado usando Objective-C ou Java. O React Native usa os mesmos blocos de construção de interface com o usuário fundamentais que os aplicativos nativos para iOS e Android. Você apenas coloca esses blocos de construção juntos usando JavaScript e React.",
+      "url": "https://facebook.github.io/react-native/"
+    },
+    {
+      "title": "Vue.js",
+      "description": "É uma framework para criação de interfaces com o usuário. Ao contrário de outros frameworks monolíticos, o Vue é projetado para ser incrementalmente adotável. A biblioteca central é focada somente na camada de visualização e é fácil de se inserir e integrar com outras bibliotecas ou projetos existentes. Por outro lado, o Vue também é perfeitamente capaz de alimentar aplicativos sofisticados de uma única página quando usados em combinação com ferramentas modernas e bibliotecas de suporte.",
+      "url": "https://vuejs.org"
+    }
+  ],
+  "schedule": [{
+      "date": "2017-12-13 08:00:00",
+      "title": "13/12/2017 - Manhã",
+      "chair": "Jorgiano Vidal",
+      "activities": [{
+          "time": {
+            "start": "08:00",
+            "end": "08:10"
+          },
+          "title": "Abertura do Evento",
+          "description": "",
+          "speakers": ["Jorgiano Vidal"]
+        },
+        {
+          "time": {
+            "start": "08:10",
+            "end": "08:50"
+          },
+          "title": "PDS Distribuído",
+          "description": "(1) LeanWriter, (2) Luna e (3) iEstágios",
+          "speakers": ["Fellipe Aleixo", "Cláudia Ribeiro", "George Azevedo", "Marília Freire"]
+        },
+        {
+          "time": {
+            "start": "08:50",
+            "end": "09:50"
+          },
+          "title": "Palestra",
+          "description": "Inovação no Contexto do LAIS/UFRN",
+          "speakers": ["Ricardo Valentim"]
+        },
+        {
+          "time": {
+            "start": "09:50",
+            "end": "10:10"
+          },
+          "title": "Coffee Break",
+          "description": "",
+          "speakers": []
+        },
+        {
+          "time": {
+            "start": "10:10",
+            "end": "10:50"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Implementação e Análise de Algoritmos para Solução do Cubo de Rubik; (2) Uma Investigação sobre as Metodologias de Desenvolvimento e a Percepção em Relação aos Modelos de Melhoria Contínua de Processos nas Startups de Tecnologia do ITNC",
+          "speakers": ["Camilla Jordana", "Adryanny Reis"]
+        },
+        {
+          "time": {
+            "start": "10:50",
+            "end": "11:40"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Estudo de Caso de Utilização de Tecnologias Spring e JSF: Implementação de Aplicação Web para Revenda de Veículos; (2) Desenvolvimento de aplicativo para acompanhamento dos alunos das autoescolas",
+          "speakers": ["Eduardo Marçal", "Josafá Romão"]
+        }
+      ]
+    },
+    {
+      "date": "2017-12-13 14:00:00",
+      "title": "13/12/2017 - Tarde",
+      "chair": "Gilbert Azevedo",
+      "activities": [{
+          "time": {
+            "start": "14:00",
+            "end": "14:50"
+          },
+          "title": "PDS Web",
+          "description": "(1) BEM, (2) Maisamo e (3) Get in Shape",
+          "speakers": ["Fellipe Aleixo", "José Antônio", "Alessandro José", "Cláudia Ribeiro"]
+        },
+        {
+          "time": {
+            "start": "14:50",
+            "end": "16:00"
+          },
+          "title": "Palestra",
+          "description": "Processamento Digital de Imagens e Aplicações",
+          "speakers": ["Agostinho Brito Júnior"]
+        },
+        {
+          "time": {
+            "start": "16:00",
+            "end": "16:20"
+          },
+          "title": "Coffee Break",
+          "description": "",
+          "speakers": []
+        },
+        {
+          "time": {
+            "start": "16:20",
+            "end": "17:00"
+          },
+          "title": "PDS TII Integrado",
+          "description": "(1) Break, (2) Forward, (3) Mosaic, (4) Touristando, (5) What-If e (6) X-Games",
+          "speakers": ["Gilbert Azevedo", "George Azevedo", "Fabiano Papaiz", "Alexandre Gomes"]
+        },
+        {
+          "time": {
+            "start": "10:50",
+            "end": "11:40"
+          },
+          "title": "Mesa Redonda",
+          "description": "Alunos do Técnico no TADS",
+          "speakers": ["Gilbert Azevedo"]
+        }
+      ]
+    },
+    {
+      "date": "2017-12-14 08:00:00",
+      "title": "14/12/2017 - Manhã",
+      "chair": "Plácido Neto",
+      "activities": [{
+          "time": {
+            "start": "08:00",
+            "end": "08:40"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Projeto e Implementação De Um Robô Que Soluciona o Problema Do Cubo De Rubik Usando Arduíno; (2) Desenvolvimento de Sistema Acadêmico para a Rede de Escolas Técnicas do SUS",
+          "speakers": ["Helora Dana", "Guilherme Portela"]
+        },
+        {
+          "time": {
+            "start": "08:40",
+            "end": "09:00"
+          },
+          "title": "PDS Corporativo",
+          "description": "(1) EasyTour e (2) RangoCerto",
+          "speakers": ["Leonardo Minora", "Marcelo Fernandes"]
+        },
+        {
+          "time": {
+            "start": "09:00",
+            "end": "09:50"
+          },
+          "title": "Palestra",
+          "description": "Desenvolvimento com Arduíno",
+          "speakers": ["João Moreno"]
+        },
+        {
+          "time": {
+            "start": "09:50",
+            "end": "10:10"
+          },
+          "title": "Coffee Break",
+          "description": "",
+          "speakers": []
+        },
+        {
+          "time": {
+            "start": "10:10",
+            "end": "12:00"
+          },
+          "title": "Mesa Redonda",
+          "description": "Ex-Alunos do TADS no Mercado/Pós",
+          "speakers": ["Plácido Neto"]
+        }
+      ]
+    },
+    {
+      "date": "2017-12-14 14:00:00",
+      "title": "14/12/2017 - Tarde",
+      "chair": "Marília Freire",
+      "activities": [{
+          "time": {
+            "start": "14:00",
+            "end": "14:40"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Virtual Bot: Simulador para Robótica em um Ambiente de Desenvolvimento Web de Interação Acadêmica; (2) PORTFOLIUM: Plataforma de Exibição de Projetos de “PDS” do Curso de Análise e Desenvolvimento de Sistemas no Campus Natal-Central",
+          "speakers": ["Ana Gonçalo", "Hayssa Hackradt"]
+        },
+        {
+          "time": {
+            "start": "14:40",
+            "end": "15:20"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Desenvolvimento do Módulo Web do Projeto Nísia; (2) Inspetor Online",
+          "speakers": ["Anne Gonçalo", "Francisca Leisia"]
+        },
+        {
+          "time": {
+            "start": "15:20",
+            "end": "16:00"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1)  Relatório Técnico das Atividades de Desenvolvimento da Plataforma Web Clever nos Projetos Integradores Distribuído e Corporativo; (2) Um Ambiente de Testes Apoiado por Código Aberto",
+          "speakers": ["Gil Belan", "Fábio Norberto"]
+        },
+        {
+          "time": {
+            "start": "16:00",
+            "end": "16:20"
+          },
+          "title": "Coffee Break",
+          "description": "",
+          "speakers": []
+        },
+        {
+          "time": {
+            "start": "16:20",
+            "end": "18:00"
+          },
+          "title": "Playtest",
+          "description": "Jogos desenvolvidos no semestre 2017.2 e votação nos melhores",
+          "speakers": ["Fellipe Aleixo"]
+        }
+      ]
+    },
+    {
+      "date": "2017-12-15 08:00:00",
+      "title": "15/12/2017 - Manhã",
+      "chair": "Eduardo Braulio",
+      "activities": [{
+          "time": {
+            "start": "08:00",
+            "end": "08:40"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) PAWEBi - Uma Proposta de Melhoria no Processo Acadêmico WEB",
+          "speakers": ["Luana Carla"]
+        },
+        {
+          "time": {
+            "start": "08:40",
+            "end": "09:50"
+          },
+          "title": "Palestra",
+          "description": "Design de Identidade Visual",
+          "speakers": ["Silvia Matos"]
+        },
+        {
+          "time": {
+            "start": "09:50",
+            "end": "10:10"
+          },
+          "title": "Coffee Break",
+          "description": "",
+          "speakers": []
+        },
+        {
+          "time": {
+            "start": "10:10",
+            "end": "11:20"
+          },
+          "title": "Defesa de TCC",
+          "description": "(1) Relatório de Desenvolvimento do Portfólio Técnico-Científico do IFRN",
+          "speakers": ["Tatiana Dantas"]
+        }
+      ]
+    }
+  ]
+}
