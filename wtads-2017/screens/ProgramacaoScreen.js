@@ -39,28 +39,28 @@ const styles = StyleSheet.create({
   }
 });
 
-const Header = ({title, chair}) => {
+const Header = ({section}) => {
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.headerTitle}>{title}</Text>
-      <Text style={styles.headerSubtitle}>{chair}</Text>
+      <Text style={styles.headerTitle}>{section.title}</Text>
+      <Text style={styles.headerSubtitle}>{section.chair}</Text>
     </View>
   )
 }
 
-const Item = ({title, description, time, speakers}) => {
+const Item = ({item}) => {
   return (
     <TouchableOpacity style={styles.itemContainer}>
-      <Text style={styles.itemTitle}>{title}</Text>
-      <Text style={styles.itemSubtitle}>{time.start} - {time.end}</Text>
+      <Text style={styles.itemTitle}>{item.title}</Text>
+      <Text style={styles.itemSubtitle}>{item.time.start} - {item.time.end}</Text>
       {
-        description.length
-        ? <Text style={styles.itemDescription}>{description}</Text>
+        item.description.length
+        ? <Text style={styles.itemDescription}>{item.description}</Text>
         : null
       }
       {
-        speakers.length
-        ? <Text style={styles.itemSpeaker}>{speakers.join(', ')}</Text>
+        item.speakers.length
+        ? <Text style={styles.itemSpeaker}>{item.speakers.join(', ')}</Text>
         : null
       }
     </TouchableOpacity>
@@ -78,12 +78,12 @@ export default class ProgramacaoScreen extends React.Component {
       carregando: true
     })
 
-    fetch('https://rawgit.com/chicobentojr/2710b41a9a376bbcd43a634bb7935fd4/raw/4f7f3ef7e520f625b881786a9d7bd7436086f7a3/wtads2017.json')
+    fetch('https://rawgit.com/cades-ifrn/minicurso-react-native/master/wtads.json')
       .then(response => response.json())
-      .then(({schedule}) => {
+      .then(data => {
         let key = 1;
         this.setState({
-          programacao: schedule.map(s => {
+          programacao: data.schedule.map(s => {
             return {
               title: s.title,
               chair: s.chair,
@@ -100,11 +100,11 @@ export default class ProgramacaoScreen extends React.Component {
   }
 
   _renderItem({item}) {
-    return <Item {...item}/>;
+    return <Item item={item} />;
   }
 
   _renderSectionHeader({section}) {
-    return <Header title={section.title} chair={section.chair}/>;
+    return <Header section={section} />;
   }
 
   render() {
