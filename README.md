@@ -2,9 +2,14 @@
 
 <img src="https://avatars1.githubusercontent.com/u/33847721?s=200" align="right">
 
-# Minicurso React-Native
+# Minicurso React-Native [:page_facing_up:](Minicurso%20de%20React-Native.pdf)
 
 Repositório oficial do minicurso de React-Native promovido pelo **C**élula **A**cadêmico de **De**senvolvimento de **S**oftware (CADES) no [VII Workshop de Tecnologias em Análise e Desenvolvimento de Sistemas](http://diatinf.ifrn.edu.br/doku.php?id=extensao:eventos:2017:7wtads:start).
+
+## Apresentação
+
+- [PDF](https://github.com/cades-ifrn/minicurso-react-native/blob/master/Minicurso%20de%20React-Native.pdf)
+- [Google Docs](https://docs.google.com/presentation/d/1Zmr2pP_dYfbWxO7phF8jjhGgE_h3yOJ9Lvau50VLvR0/edit?usp=sharing)
 
 ## Prática
 
